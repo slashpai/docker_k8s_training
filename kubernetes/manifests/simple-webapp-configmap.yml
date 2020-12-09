@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-webapp-cm
+  name: simple-webapp-cm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-webapp-cm
+  template:
+    metadata:
+      labels:
+        app: simple-webapp-cm
+    spec:
+      containers:
+      - image: simple-webapp:v1
+        name: simple-webapp
+        envFrom:
+        - configMapRef:
+            name: simple-webapp-cm

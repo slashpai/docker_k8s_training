@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: simple-webapp-env
+  name: simple-webapp-env
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-webapp-env
+  template:
+    metadata:
+      labels:
+        app: simple-webapp-env
+    spec:
+      containers:
+      - image: simple-webapp:v1
+        name: simple-webapp
+        env:
+        - name: APP_COLOR
+          value: 'orange'
