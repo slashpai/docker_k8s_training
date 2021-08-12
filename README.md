@@ -12,6 +12,8 @@
 [![Watch the video on Docker Workshop](https://img.youtube.com/vi/HvKOpHXX2ZI/maxresdefault.jpg)](https://www.youtube.com/watch?v=HvKOpHXX2ZI&t=17s)
 **Note:** A small correction for a mistake in video is mentioned in comments section
 
+- [Slides used for workshop](https://github.com/slashpai/slides/blob/main/docker_workshop.pdf)
+
 - [A beginner friendly guide to Docker](https://medium.com/devops-things/a-beginner-friendly-guide-to-docker-bdc57fbbe848)
 
 [Kubernetes Presentation](https://slashpai.github.io/presentations/kubernetes_in_action)
